@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Avens Conseil</title>
+<meta name="description" content="Systèmes d'information, transformation digitale, architecture IT, organisation de projets et intelligence artificielle : les cinq expertises d'Avens Conseil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .service-block { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 3.2rem; }
+  @media (max-width: 860px) { .service-block { grid-template-columns: 1fr; } }
+  .offer-list { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.9rem 1.6rem; margin-top: 1.6rem; }
+  @media (max-width: 560px) { .offer-list { grid-template-columns: 1fr; } }
+  .offer-list li { list-style: none; display: flex; gap: 0.7rem; align-items: flex-start; font-size: 0.94rem; }
+  .offer-list .tri-mark { color: var(--gold); width: 0.85rem; height: 0.85rem; margin-top: 0.35rem; }
+  .service-num { font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.18em; color: var(--gold); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="tri" viewBox="0 0 24 24">
+      <polygon points="12,3 21,20 3,20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Avens Conseil — accueil">
+      <img src="images/logo-light-on-transparent.png" alt="Avens Conseil">
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Échanger avec le cabinet</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Accueil</a> / Services</p>
+      <p class="eyebrow">Nos expertises</p>
+      <h1>Cinq disciplines mobilisées pour votre performance.</h1>
+      <p class="lede">
+        Du diagnostic à la mise en production, Avens Conseil intervient sur l'ensemble de la
+        chaîne de valeur des systèmes d'information — jusqu'à l'intégration opérationnelle
+        de l'intelligence artificielle dans vos organisations.
+      </p>
+    </div>
+  </section>
+
+  <!-- SI -->
+  <section class="section" id="si">
+    <div class="wrap service-block reveal">
+      <div>
+        <span class="service-num">01 — SI</span>
+        <h2 style="margin-top:0.6rem;font-size:2rem;">Systèmes d'Information</h2>
+        <p class="lede" style="margin-top:1rem;">
+          Nous aidons les directions informatiques et métier à faire de leur système
+          d'information un levier de performance plutôt qu'une contrainte, en conciliant
+          rationalisation, fiabilité et capacité d'évolution.
+        </p>
+      </div>
+      <ul class="offer-list">
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Audit et cartographie du SI</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Urbanisation et rationalisation applicative</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Schéma directeur SI</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Gestion de la dette technique</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Assistance à maîtrise d'ouvrage (AMOA)</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Sélection et intégration de progiciels</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TD -->
+  <section class="section section-cream-warm" id="td">
+    <div class="wrap service-block reveal">
+      <div>
+        <span class="service-num">02 — TD</span>
+        <h2 style="margin-top:0.6rem;font-size:2rem;">Transformation Digitale</h2>
+        <p class="lede" style="margin-top:1rem;">
+          Nous cadrons et pilotons vos programmes de transformation de bout en bout, en
+          gardant l'usage et l'adoption au centre de chaque décision.
+        </p>
+      </div>
+      <ul class="offer-list">
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Cadrage de programmes de transformation</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Digitalisation des parcours clients et collaborateurs</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Conduite du changement</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Intégration de nouveaux outils et plateformes</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Pilotage de la création de valeur</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Formation et accompagnement des équipes</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AR -->
+  <section class="section" id="ar">
+    <div class="wrap service-block reveal">
+      <div>
+        <span class="service-num">03 — AR</span>
+        <h2 style="margin-top:0.6rem;font-size:2rem;">Architecture IT</h2>
+        <p class="lede" style="margin-top:1rem;">
+          Nous concevons des architectures robustes, sécurisées et évolutives, pensées pour
+          durer et pour absorber les exigences réglementaires propres à vos secteurs d'activité.
+        </p>
+      </div>
+      <ul class="offer-list">
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Architecture d'entreprise</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Architecture applicative et technique</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Arbitrages build / buy</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Architecture cloud et hybride</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Sécurité et conformité des systèmes</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Urbanisation des échanges et API</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OR -->
+  <section class="section section-cream-warm" id="or">
+    <div class="wrap service-block reveal">
+      <div>
+        <span class="service-num">04 — OR</span>
+        <h2 style="margin-top:0.6rem;font-size:2rem;">Organisation &amp; Pilotage de Projets</h2>
+        <p class="lede" style="margin-top:1rem;">
+          Nous structurons la gouvernance et le pilotage de vos projets IT les plus complexes,
+          pour tenir les délais, les budgets et la qualité attendue.
+        </p>
+      </div>
+      <ul class="offer-list">
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Gouvernance de programme</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Pilotage PMO</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Gestion des risques projet</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Structuration des équipes et des rôles</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Reporting à la direction générale</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Management de transition</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- IA -->
+  <section class="section" id="ia" style="background:var(--navy);color:var(--cream);">
+    <div class="wrap service-block reveal">
+      <div>
+        <span class="service-num">05 — IA</span>
+        <h2 style="margin-top:0.6rem;font-size:2rem;color:var(--cream);">Intelligence Artificielle</h2>
+        <p class="lede" style="margin-top:1rem;color:#cfcfd8;">
+          Avens Conseil aide les entreprises à appréhender l'intelligence artificielle de façon
+          concrète&nbsp;: monter en compétences, identifier les bons cas d'usage et déployer des
+          solutions agentiques réellement intégrées à vos systèmes existants.
+        </p>
+      </div>
+      <ul class="offer-list" style="color:var(--cream);">
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Sensibilisation et formation des équipes à l'IA</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Cadrage de cas d'usage métier</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Déploiement de solutions d'IA agentique</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Intégration aux systèmes existants</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Gouvernance et cadre d'usage de l'IA</li>
+        <li><span class="tri-mark"><svg viewBox="0 0 24 24"><use href="#tri"/></svg></span>Sécurité et maîtrise des risques liés à l'IA</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--gold);text-align:center;">
+    <div class="wrap reveal">
+      <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem);">Une expertise à mobiliser&nbsp;?</h2>
+      <p class="lede center" style="color:#3c3113;margin-top:0.8rem;">Nos consultants seniors sont disponibles pour un premier échange de cadrage.</p>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:1.8rem;">Prendre contact</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo-light-on-transparent.png" alt="Avens Conseil">
+        <p>Cabinet de conseil en systèmes d'information, transformation digitale, architecture IT et intelligence artificielle — au service de la banque, de la finance, de l'assurance et du secteur public.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          <a href="mailto:contact@avens-conseil.fr">contact@avens-conseil.fr</a>
+          <a href="tel:+33759558007">+33 7 59 55 80 07</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Avens Conseil. Tous droits réservés.</span>
+      <span>En avance sur la performance.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
