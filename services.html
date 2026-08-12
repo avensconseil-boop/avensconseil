@@ -3,13 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Expertises — Avens Conseil</title>
-<meta name="description" content="Les expertises d'Avens Conseil : intelligence artificielle (cadrage, formation, déploiement), conseil en systèmes d'information, transformation digitale, architecture IT, pilotage de projets.">
+<title>Expertises conseil IT : IA, SI, transformation digitale, architecture — Avens Conseil</title>
+<meta name="description" content="Cinq expertises complémentaires : intelligence artificielle et formation Qualiopi, conseil en systèmes d'information, transformation digitale, architecture IT, pilotage de projets. Accompagnement PME et ETI tous secteurs.">
+<link rel="canonical" href="https://avensconseil.com/services.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Expertises conseil IT — Avens Conseil">
+<meta property="og:description" content="IA & formation Qualiopi, conseil SI, transformation digitale, architecture IT, pilotage de projets. Accompagnement PME et ETI.">
+<meta property="og:url" content="https://avensconseil.com/services.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Avens Conseil">
+
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- JSON-LD : Organisation -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Avens Conseil",
+  "url": "https://avensconseil.com",
+  "logo": "https://avensconseil.com/logo.svg",
+  "description": "Cabinet de conseil en systèmes d'information et en intelligence artificielle. Formation IA certifiée Qualiopi, déploiement IA souverain, conseil SI, transformation digitale.",
+  "email": "contact@avensconseil.com",
+  "telephone": "+33759558007",
+  "founder": {
+    "@type": "Person",
+    "name": "Vanessa Bobezeau",
+    "jobTitle": "Directrice Générale"
+  },
+  "areaServed": { "@type": "Country", "name": "France" },
+  "knowsLanguage": "fr",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Expertises Avens Conseil",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intelligence artificielle & souveraineté des données", "url": "https://avensconseil.com/ia.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conseil en systèmes d'information", "url": "https://avensconseil.com/services.html#si" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transformation digitale", "url": "https://avensconseil.com/services.html#td" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Architecture IT", "url": "https://avensconseil.com/services.html#ar" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Organisation & pilotage de projets", "url": "https://avensconseil.com/services.html#or" } }
+    ]
+  },
+  "sameAs": ["https://www.linkedin.com/company/avens-conseil"]
+}
+</script>
+
+<!-- JSON-LD : Formation IA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Formation Intelligence Artificielle pour PME",
+  "description": "Formation IA certifiée Qualiopi destinée aux dirigeants, managers et collaborateurs de PME. Éligible financement OPCO.",
+  "url": "https://avensconseil.com/ia.html",
+  "provider": {
+    "@type": "Organization",
+    "name": "Avens Conseil",
+    "url": "https://avensconseil.com",
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certification qualité", "name": "Qualiopi" }
+  },
+  "educationalLevel": "Tous niveaux",
+  "inLanguage": "fr",
+  "audience": { "@type": "Audience", "audienceType": "PME et ETI — dirigeants, managers, collaborateurs" },
+  "teaches": [
+    "Comprendre les enjeux stratégiques de l'IA pour décider",
+    "Identifier les cas d'usage IA à valeur pour son activité",
+    "Utiliser les outils d'IA générative au quotidien",
+    "Maîtriser les enjeux de souveraineté des données et conformité RGPD/AI Act"
+  ],
+  "isAccessibleForFree": false
+}
+</script>
+
+<style>
+/* --- Styles supplémentaires services.html --- */
+.badge-qualiopi {
+  display: inline-block;
+  margin-left: .8rem;
+  padding: .2rem .7rem;
+  font-family: var(--font-body);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: #2E7D32;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.formation-parcours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--line);
+}
+.parcours-item {
+  padding: var(--space-3);
+  background: var(--white);
+  border-top: 3px solid var(--gold);
+}
+.parcours-item h4 {
+  font-family: var(--font-body);
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 .5rem 0;
+}
+.parcours-item p {
+  font-size: .88rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.triggers {
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--line);
+}
+.triggers-label {
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .6rem;
+}
+.triggers ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.triggers li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: .45rem;
+  font-size: .9rem;
+  color: var(--ink-soft);
+}
+.triggers li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .55em;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+}
+.service-cta {
+  margin-top: var(--space-3);
+}
+@media (max-width: 1000px) {
+  .formation-parcours { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body>
 
@@ -47,33 +200,64 @@
     <div class="container">
       <p class="eyebrow eyebrow--light">Expertises</p>
       <h1>Nos expertises</h1>
-      <p>Cinq pôles complémentaires, de l'intelligence artificielle à l'architecture, pour accompagner vos systèmes d'information de la stratégie à l'exécution.</p>
+      <p>Cinq pôles complémentaires pour accompagner vos systèmes d'information de la stratégie à l'exécution — avec une expertise formation IA certifiée Qualiopi pour démocratiser l'intelligence artificielle dans vos équipes.</p>
     </div>
   </section>
 
   <section class="section section--white">
     <div class="container">
 
+      <!-- ===== 01 — IA (enrichi formation Qualiopi) ===== -->
       <div class="service-detail service-detail--feature reveal" id="ia">
         <div class="service-detail__code">01</div>
         <div>
           <p class="eyebrow">Expertise phare</p>
-          <h2>Intelligence artificielle &amp; souveraineté des données</h2>
+          <h2>Intelligence artificielle, formation &amp; souveraineté des données
+            <span class="badge-qualiopi">Certifié Qualiopi</span>
+          </h2>
           <p class="section-lead">
-            Nous déployons l'IA au plus près de vos métiers — cadrage des cas d'usage, formation des équipes,
-            mise en production — dans un cadre où vos données restent hébergées en Europe, sous votre contrôle,
-            et ne servent jamais à entraîner de modèle tiers.
+            Nous aidons vos équipes à appréhender et adopter l'IA — du CODIR aux collaborateurs terrain.
+            Cadrage des cas d'usage, formation certifiée Qualiopi éligible OPCO, déploiement en production,
+            le tout dans un cadre où vos données restent hébergées en Europe et ne servent jamais à entraîner
+            de modèle tiers.
           </p>
           <ul class="service-detail__list">
-            <li>Diagnostic de maturité et identification des cas d'usage à fort impact</li>
-            <li>Formation et acculturation des équipes, adaptées à chaque métier</li>
-            <li>Déploiement en cloud européen, cloud privé ou sur votre infrastructure</li>
-            <li>Gouvernance, conformité RGPD et AI Act</li>
+            <li>Diagnostic de maturité IA avec identification des cas d'usage à ROI mesurable</li>
+            <li>Formations certifiées Qualiopi, éligibles financement OPCO, adaptées à chaque profil</li>
+            <li>Déploiement sur cloud européen, cloud privé ou votre propre infrastructure</li>
+            <li>Cadre de gouvernance livré : conformité RGPD, AI Act, charte d'usage IA</li>
           </ul>
-          <p style="margin-top:1.5rem"><a href="ia.html" class="btn btn--outline-navy">Découvrir l'offre complète</a></p>
+
+          <!-- Parcours formation par profil -->
+          <div class="formation-parcours">
+            <div class="parcours-item">
+              <h4>Dirigeants &amp; CODIR</h4>
+              <p>Comprendre les enjeux stratégiques de l'IA pour prendre des décisions éclairées sur les investissements et la trajectoire.</p>
+            </div>
+            <div class="parcours-item">
+              <h4>Managers opérationnels</h4>
+              <p>Intégrer l'IA dans le pilotage de leurs équipes : identifier les tâches automatisables, mesurer les gains, accompagner le changement.</p>
+            </div>
+            <div class="parcours-item">
+              <h4>Collaborateurs métier</h4>
+              <p>Utiliser les outils d'IA générative au quotidien dans leurs tâches : rédaction, analyse, synthèse, recherche documentaire.</p>
+            </div>
+          </div>
+
+          <div class="triggers">
+            <p class="triggers-label">Vous nous sollicitez quand</p>
+            <ul>
+              <li>Vos équipes utilisent l'IA de manière informelle, sans cadre ni gouvernance</li>
+              <li>Vous voulez former vos collaborateurs mais avez besoin d'un financement OPCO</li>
+              <li>Vous devez déployer l'IA sans exposer vos données sensibles à des tiers</li>
+            </ul>
+          </div>
+
+          <p class="service-cta"><a href="ia.html" class="btn btn--outline-navy">Découvrir l'offre IA complète</a></p>
         </div>
       </div>
 
+      <!-- ===== 02 — Conseil SI ===== -->
       <div class="service-detail reveal" id="si">
         <div class="service-detail__code">02</div>
         <div>
@@ -81,14 +265,26 @@
           <h2>Conseil en systèmes d'information</h2>
           <p class="section-lead">Nous accompagnons les directions IT dans le cadrage, la priorisation et le pilotage de leurs projets SI, en tenant compte des contraintes réglementaires et métier propres à votre secteur.</p>
           <ul class="service-detail__list">
-            <li>Diagnostic et audit de l'existant applicatif</li>
-            <li>Cadrage stratégique et schéma directeur SI</li>
-            <li>Expression de besoins et rédaction de cahiers des charges</li>
-            <li>Accompagnement au choix de solutions et d'éditeurs</li>
+            <li>Rapport d'audit avec cartographie applicative et recommandations priorisées</li>
+            <li>Schéma directeur SI livré avec trajectoire à 3 ans et budget associé</li>
+            <li>Cahier des charges fonctionnel et technique prêt pour consultation éditeurs</li>
+            <li>Grille d'évaluation comparée des solutions et recommandation argumentée</li>
           </ul>
+
+          <div class="triggers">
+            <p class="triggers-label">Vous nous sollicitez quand</p>
+            <ul>
+              <li>Votre SI actuel ne suit plus la croissance de votre activité</li>
+              <li>Vous devez choisir un nouvel ERP, CRM ou solution métier</li>
+              <li>Vous préparez un schéma directeur ou un budget d'investissement IT</li>
+            </ul>
+          </div>
+
+          <p class="service-cta"><a href="contact.html?sujet=conseil-si" class="btn btn--outline-navy">Échangeons sur ce sujet</a></p>
         </div>
       </div>
 
+      <!-- ===== 03 — Transformation digitale ===== -->
       <div class="service-detail reveal" id="td">
         <div class="service-detail__code">03</div>
         <div>
@@ -96,14 +292,26 @@
           <h2>Transformation digitale</h2>
           <p class="section-lead">Nous structurons vos programmes de transformation pour concilier ambition digitale, contraintes opérationnelles et adhésion des équipes.</p>
           <ul class="service-detail__list">
-            <li>Définition de trajectoires de transformation</li>
-            <li>Refonte et digitalisation de processus métier</li>
-            <li>Accompagnement au changement et formation des équipes</li>
-            <li>Pilotage de la performance post-déploiement</li>
+            <li>Feuille de route de transformation avec jalons, priorités et quick wins</li>
+            <li>Cartographie des processus cibles et plan de digitalisation</li>
+            <li>Plan de conduite du changement avec indicateurs d'adoption</li>
+            <li>Tableau de bord de performance post-déploiement</li>
           </ul>
+
+          <div class="triggers">
+            <p class="triggers-label">Vous nous sollicitez quand</p>
+            <ul>
+              <li>Vos processus métier reposent encore sur des fichiers Excel et des emails</li>
+              <li>Un projet de transformation a été lancé mais l'adoption stagne</li>
+              <li>Vous fusionnez des équipes ou des entités avec des outils différents</li>
+            </ul>
+          </div>
+
+          <p class="service-cta"><a href="contact.html?sujet=transformation-digitale" class="btn btn--outline-navy">Échangeons sur ce sujet</a></p>
         </div>
       </div>
 
+      <!-- ===== 04 — Architecture IT ===== -->
       <div class="service-detail reveal" id="ar">
         <div class="service-detail__code">04</div>
         <div>
@@ -111,14 +319,26 @@
           <h2>Architecture IT</h2>
           <p class="section-lead">Nous concevons des architectures robustes et évolutives, capables de soutenir la croissance et les exigences de sécurité de vos environnements.</p>
           <ul class="service-detail__list">
-            <li>Urbanisation et cartographie du système d'information</li>
-            <li>Définition de cibles d'architecture applicative et technique</li>
-            <li>Accompagnement à la migration et à la modernisation</li>
-            <li>Cadrage des enjeux de sécurité et de conformité</li>
+            <li>Cartographie d'urbanisation livrée avec matrice de flux et dépendances</li>
+            <li>Dossier d'architecture cible avec plan de migration et chiffrage</li>
+            <li>Spécifications techniques pour la modernisation applicative</li>
+            <li>Rapport de conformité sécurité avec plan de remédiation</li>
           </ul>
+
+          <div class="triggers">
+            <p class="triggers-label">Vous nous sollicitez quand</p>
+            <ul>
+              <li>Vous envisagez une migration cloud ou un changement d'hébergement</li>
+              <li>Votre dette technique freine vos projets et augmente vos coûts</li>
+              <li>Vous préparez une croissance externe et devez fusionner des SI</li>
+            </ul>
+          </div>
+
+          <p class="service-cta"><a href="contact.html?sujet=architecture-it" class="btn btn--outline-navy">Échangeons sur ce sujet</a></p>
         </div>
       </div>
 
+      <!-- ===== 05 — Organisation & pilotage ===== -->
       <div class="service-detail reveal" id="or">
         <div class="service-detail__code">05</div>
         <div>
@@ -126,11 +346,22 @@
           <h2>Organisation &amp; pilotage de projets</h2>
           <p class="section-lead">Nous structurons la gouvernance de vos projets pour sécuriser les délais, les budgets et la qualité de livraison.</p>
           <ul class="service-detail__list">
-            <li>Mise en place de gouvernance projet et de comitologie</li>
-            <li>Pilotage PMO multi-projets</li>
-            <li>Gestion des risques et des dépendances</li>
-            <li>Reporting et pilotage de la performance projet</li>
+            <li>Modèle de gouvernance livré avec comitologie, rôles et circuits de décision</li>
+            <li>Dispositif PMO opérationnel avec tableaux de bord multi-projets</li>
+            <li>Registre des risques et plan de mitigation actualisé</li>
+            <li>Reporting de performance projet avec alertes et recommandations</li>
           </ul>
+
+          <div class="triggers">
+            <p class="triggers-label">Vous nous sollicitez quand</p>
+            <ul>
+              <li>Vos projets dérapent en délais ou en budget sans visibilité claire</li>
+              <li>Vous lancez un programme multi-projets et avez besoin d'un PMO structurant</li>
+              <li>Vous souhaitez professionnaliser la gouvernance projet de votre organisation</li>
+            </ul>
+          </div>
+
+          <p class="service-cta"><a href="contact.html?sujet=pilotage-projets" class="btn btn--outline-navy">Échangeons sur ce sujet</a></p>
         </div>
       </div>
 
@@ -189,7 +420,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Avens Conseil. Tous droits réservés.</span>
+      <span>&copy; <span data-year>2026</span> Avens Conseil. Tous droits réservés.</span>
       <span>En avance sur la performance.</span>
     </div>
   </div>
