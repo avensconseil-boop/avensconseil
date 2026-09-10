@@ -122,7 +122,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ---------- Header ---------- */
 .site-header { position: sticky; top: 0; z-index: 100; background: var(--cream); border-bottom: 1px solid rgba(14,27,51,.10); }
 .header-strip { height: 4px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; padding-block: 1.05rem; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding-block: .8rem; }
 
 .logo { display: flex; align-items: center; gap: .7rem; }
 .logo-mark { width: 32px; height: 32px; color: var(--gold); flex-shrink: 0; }
@@ -432,5 +432,5 @@ a.usecase-card:hover { background: var(--cream-2); }
 a.usecase-card h3 { color: var(--navy); }
 
 /* Logo image (pave creme assume) */
-.logo-img { height: 58px; width: auto; display: block; }
-@media (max-width: 640px){ .logo-img { height: 46px; } }
+.logo-img { height: 74px; width: auto; display: block; }
+@media (max-width: 640px){ .logo-img { height: 54px; } }
