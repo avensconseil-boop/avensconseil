@@ -1,0 +1,54 @@
+/* ==========================================================
+   AJOUTS — refonte accueil (formation, missions, pourquoi nous)
+   ========================================================== */
+
+/* ---------- Bandeau Formation IA (accueil) ---------- */
+.formation-band { background: var(--cream-2); border-bottom: 1px solid var(--line); padding-block: var(--space-6); }
+.formation-band__inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: var(--space-5); align-items: center; }
+.formation-band h2 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); }
+.formation-band > .container > div > p:not(.eyebrow) { margin-top: var(--space-2); color: var(--ink-soft); font-size: 1.02rem; max-width: 560px; }
+.formation-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.formation-facts li { background: var(--white); padding: var(--space-2) var(--space-3); }
+.formation-facts span { display: block; font-size: .78rem; color: var(--ink-soft); margin-bottom: .25rem; }
+.formation-facts strong { font-weight: 600; color: var(--navy); font-size: .95rem; }
+
+/* ---------- Carte SI groupée ---------- */
+.card-expertise--group { grid-column: 1 / -1; }
+.si-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); margin-top: var(--space-3); }
+.si-list li { border-top: 2px solid var(--gold); padding-top: var(--space-2); }
+.si-list a { display: block; margin: 0; border: none; font-weight: 400; font-size: inherit; }
+.si-list strong { display: block; font-weight: 600; color: var(--navy); font-size: .98rem; }
+.si-list span { display: block; margin-top: .35rem; font-size: .88rem; color: var(--ink-soft); }
+.si-list a:hover strong { color: var(--gold); }
+
+/* ---------- Missions anonymisées ---------- */
+.cases-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; background: var(--line); border: 1px solid var(--line); }
+.case-card { background: var(--white); padding: var(--space-4); display: flex; flex-direction: column; }
+.case-card__sector { font-size: .74rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.case-card h3 { margin-top: .7rem; font-size: 1.15rem; }
+.case-card p { margin-top: var(--space-2); font-size: .93rem; color: var(--ink-soft); flex: 1; }
+.case-card__tag { display: inline-block; align-self: flex-start; margin-top: var(--space-3); font-size: .78rem; font-weight: 600; padding: .35rem .8rem; border: 1px solid var(--line); color: var(--navy); background: var(--cream); }
+
+/* ---------- Pourquoi nous ---------- */
+.why-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-6); align-items: center; }
+.why-grid blockquote { font-size: clamp(1.15rem, 2vw, 1.5rem); }
+.why-list { display: grid; gap: var(--space-3); }
+.why-list li { border-left: 2px solid var(--gold); padding-left: var(--space-2); }
+.why-list strong { display: block; font-weight: 600; color: var(--cream); font-size: .98rem; }
+.why-list span { display: block; margin-top: .3rem; font-size: .9rem; color: rgba(248,245,236,.68); }
+
+/* ---------- Pages légales ---------- */
+.legal { max-width: 760px; }
+.legal h2 { font-size: 1.3rem; margin-top: var(--space-5); }
+.legal h2:first-of-type { margin-top: 0; }
+.legal p, .legal li { margin-top: var(--space-2); color: var(--ink-soft); font-size: .97rem; }
+.legal ul { list-style: disc; padding-left: 1.3rem; }
+.legal .todo { background: #FFF4D6; border-left: 3px solid var(--gold); padding: .2rem .5rem; color: var(--ink); font-weight: 600; }
+
+@media (max-width: 1000px) {
+  .formation-band__inner, .why-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+  .si-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .cases-grid, .si-list, .formation-facts { grid-template-columns: 1fr; }
+}
