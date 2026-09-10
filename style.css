@@ -432,5 +432,5 @@ a.usecase-card:hover { background: var(--cream-2); }
 a.usecase-card h3 { color: var(--navy); }
 
 /* Logo image (pave creme assume) */
-.logo-img { height: 46px; width: auto; display: block; border-radius: 6px; background: var(--cream); padding: 5px 10px; }
-@media (max-width: 640px){ .logo-img { height: 38px; } }
+.logo-img { height: 52px; width: auto; display: block; }
+@media (max-width: 640px){ .logo-img { height: 42px; } }
