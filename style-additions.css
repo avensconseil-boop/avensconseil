@@ -52,3 +52,63 @@
 @media (max-width: 620px) {
   .cases-grid, .si-list, .formation-facts { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================
+   AJOUTS — Ressources (articles)
+   ========================================================== */
+
+/* ---------- Corps d'article ---------- */
+.article { max-width: 720px; }
+.article > p { margin-top: var(--space-3); color: var(--ink); font-size: 1.02rem; line-height: 1.75; }
+.article h2 { font-size: 1.45rem; margin-top: var(--space-5); }
+.article h3 { font-size: 1.12rem; font-family: var(--font-body); font-weight: 600; margin-top: var(--space-4); }
+.article ul, .article ol { margin-top: var(--space-2); padding-left: 1.3rem; }
+.article ul { list-style: disc; }
+.article ol { list-style: decimal; }
+.article li { margin-top: .5rem; color: var(--ink); line-height: 1.7; }
+.article strong { color: var(--navy); }
+.article a { border-bottom: 1.5px solid var(--gold); font-weight: 500; }
+.article a:hover { color: var(--gold); }
+.article__meta { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; font-size: .85rem; color: var(--ink-soft); padding-bottom: var(--space-3); border-bottom: 1px solid var(--line); }
+.article__lead { font-size: 1.12rem; color: var(--ink-soft); margin-top: var(--space-3); }
+
+/* Encadré à retenir */
+.callout { border-left: 3px solid var(--gold); background: var(--cream); padding: var(--space-3); margin-top: var(--space-4); }
+.callout h3 { margin-top: 0; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.callout p, .callout li { font-size: .95rem; }
+
+/* Tableau d'article */
+.article table { width: 100%; border-collapse: collapse; margin-top: var(--space-3); font-size: .95rem; }
+.article th, .article td { text-align: left; padding: .8rem .9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.article thead th { font-family: var(--font-body); font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); border-bottom: 2px solid var(--navy); }
+
+/* CTA de fin d'article */
+.article-cta { margin-top: var(--space-5); padding: var(--space-4); background: var(--navy); color: var(--cream); }
+.article-cta h2 { color: var(--white); margin-top: 0; font-size: 1.3rem; }
+.article-cta p { margin-top: var(--space-2); color: rgba(248,245,236,.78); font-size: .97rem; }
+.article-cta .btn { margin-top: var(--space-3); }
+
+/* ---------- Liste des ressources ---------- */
+.posts-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; background: var(--line); border: 1px solid var(--line); }
+.post-card { background: var(--white); padding: var(--space-4); display: flex; flex-direction: column; }
+.post-card__tag { font-size: .74rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.post-card h2 { margin-top: .7rem; font-size: 1.2rem; }
+.post-card p { margin-top: var(--space-2); font-size: .94rem; color: var(--ink-soft); flex: 1; }
+.post-card a { display: inline-flex; align-self: flex-start; margin-top: var(--space-3); font-size: .88rem; font-weight: 600; color: var(--navy); border-bottom: 1.5px solid var(--gold); }
+.post-card__date { display: block; margin-top: var(--space-2); font-size: .8rem; color: var(--ink-soft); }
+
+@media (max-width: 780px) { .posts-grid { grid-template-columns: 1fr; } }
+
+/* Rythme court : suites de phrases brèves */
+.article .staccato p { margin-top: .4rem; }
+.article .staccato p:first-child { margin-top: var(--space-3); }
+.article .rule-q { font-size: 1.35rem; margin-top: var(--space-5); }
+
+/* Exemples de prompts */
+.prompt { margin-top: var(--space-3); border: 1px solid var(--line); border-left: 3px solid var(--navy); background: var(--cream-2); padding: var(--space-3); }
+.prompt__label { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: .6rem; }
+.prompt p { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .86rem; line-height: 1.65; color: var(--navy); margin: 0; }
+.prompt p + p { margin-top: .6rem; }
+
+/* Règles numérotées */
+.article h3.rule-h { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; color: var(--navy); border-top: 2px solid var(--gold); padding-top: var(--space-2); margin-top: var(--space-5); }
