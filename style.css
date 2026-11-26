@@ -437,3 +437,22 @@ a.usecase-card h3 { color: var(--navy); }
 
 /* ---------- Pied de page : mention organisme de formation ---------- */
 .footer-legal { padding-top: var(--space-3); font-size: .8rem; line-height: 1.55; color: rgba(248,245,236,.55); max-width: 900px; }
+
+/* ---------- En-tête : logo et bouton ne se compriment pas ---------- */
+.site-header .logo { flex-shrink: 0; }
+.header-cta .btn { white-space: nowrap; }
+
+/* ---------- Menu replié plus tôt : évite l'écrasement du logo entre 1000 et 1180 px ---------- */
+@media (min-width: 1001px) and (max-width: 1180px) {
+  .nav-toggle { display: flex; }
+  .nav-links {
+    position: fixed; inset: 104px 0 0 0; z-index: 90;
+    background: var(--cream); flex-direction: column;
+    padding: var(--space-4) var(--space-3);
+    gap: var(--space-3);
+    transform: translateY(-8px); opacity: 0; pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+  }
+  .nav-links.is-open { opacity: 1; transform: none; pointer-events: auto; }
+  .nav-links a { font-size: 1.05rem; display: block; }
+}
